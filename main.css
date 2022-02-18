@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav a:nth-child(1) {
+    margin-right: auto;
+}
+
+.hero-section {
+    width: 100%;
+    padding: 2rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    bottom: 0;
+}
