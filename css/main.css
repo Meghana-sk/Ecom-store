@@ -1,3 +1,5 @@
+@import url("https://intactui.netlify.app/main.css");
+@import url("../css/auth.css");
 :root {
     --pd-s: 20px;
     --pd-l: 24px;
@@ -80,7 +82,7 @@
 }
 
 .hero-container {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./assets/hero.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/hero.jpg");
     width: 100%;
     height: 60vh;
     background-position: center center;
@@ -128,28 +130,28 @@
 }
 
 .cat-one {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./assets/cap.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/cap.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .cat-two {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./assets/glasses.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/glasses.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .cat-three {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./assets/shoes.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/shoes.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .cat-four {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./assets/partywear.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/partywear.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
