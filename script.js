@@ -22,5 +22,5 @@ function show() {
  * @return none
  */
 function close() {
-    mainMenu.style.display = 'none';
+    mainMenu.style.top = '-100%';
 }
