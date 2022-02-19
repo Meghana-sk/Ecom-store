@@ -156,7 +156,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        background: #fff;
+        background: var(--white-color);
         transition: top 0.8s ease;
         display: none;
         padding: 3rem;
