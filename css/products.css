@@ -1,0 +1,36 @@
+main {
+    display: flex;
+}
+
+.prod-filters {
+    width: 300px;
+    margin: 0.5rem;
+    border-right: 1px solid var(--offline-gray)
+}
+
+.prod-filters ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: var(--offline-gray);
+}
+
+.btn-secondary-text {
+    color: var(--error-red);
+}
+
+.prod-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+}
