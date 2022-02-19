@@ -22,5 +22,5 @@ function show() {
  * @return none
  */
 function close() {
-    mainMenu.style.visibilty = 'none';
+    mainMenu.style.display = 'none';
 }
