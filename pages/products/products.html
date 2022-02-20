@@ -25,7 +25,7 @@
             <li><a href="#">Women</a></li>
             <li><a href="#">Accessories</a></li>
             <li>
-                <a href="./pages/authentication/login.html">
+                <a href="../authentication/login.html">
                     <button class="btn btn-primary login-btn">Login</button>
                 </a>
             </li>
@@ -50,14 +50,43 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="prod-content">
         <aside class="prod-filters">
-            <h4>FILTERS</h4>
-            <button class="btn btn-secondary-text text-s fw-600">
-          Clear all filters
-        </button>
+            <div class="close-filter"><i class="fa fa-times"></i></div>
+            <div class="filter-header">
+                <h4 class="section-heading">FILTERS</h4>
+                <button class="clear-btn">Clear</button>
+            </div>
             <div class="separator"></div>
-            <h5>CATEGORIES</h5>
+            <h5 class="section-heading">Price range(Rs)</h5>
+            <div class="slider-container">
+                <input id="slide" type="range" min="100" max="2000" step="100" value="500" class="slider" />
+                <div class="slider-range-value">
+                    <p id="slider-min">100</p>
+                    <p id="slider-current">500</p>
+                    <p id="slider-max">2000</p>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <h5 class="section-heading">Sort price by</h5>
+            <ul>
+                <li>
+                    <input type="radio" name="price" id="price-range-1" />Low to High
+                </li>
+                <li>
+                    <input type="radio" name="price" id="price-range-2" />High to low
+                </li>
+            </ul>
+            <div class="separator"></div>
+            <h5 class="section-heading">Ratings ⭐</h5>
+            <ul>
+                <li><input type="radio" name="rating" id="rating" />4 & above</li>
+                <li><input type="radio" name="rating" id="rating" />3 & above</li>
+                <li><input type="radio" name="rating" id="rating" />2 & above</li>
+                <li><input type="radio" name="rating" id="rating" />1 & above</li>
+            </ul>
+            <div class="separator"></div>
+            <h5 class="section-heading">CATEGORIES</h5>
             <ul>
                 <li>
                     <input type="checkbox" name="category-1" id="category-1" />Caps
@@ -73,7 +102,7 @@
                 </li>
             </ul>
             <div class="separator"></div>
-            <h5>BRANDS</h5>
+            <h5 class="section-heading">BRANDS</h5>
             <ul>
                 <li><input type="checkbox" name="brand-1" id="brand-1" />Adidas</li>
                 <li><input type="checkbox" name="brand-2" id="brand-2" />H&M</li>
@@ -81,171 +110,186 @@
                 <li><input type="checkbox" name="brand-3" id="brand-4" />Nike</li>
             </ul>
             <div class="separator"></div>
-            <h5>Sort price by</h5>
-            <ul>
-                <li>
-                    <input type="radio" name="price" id="price-range-1" />Low to High
-                </li>
-                <li>
-                    <input type="radio" name="price" id="price-range-2" />High to low
-                </li>
-            </ul>
-            <div class="separator"></div>
         </aside>
         <section class="prod-section">
-            <div class="card">
-                <div class="card-content">
-                    <h6 class="card-badge">NEW</h6>
-                    <div class="wishlist"><i class="far fa-heart"></i></div>
-                    <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-subtitle">Sub title</p>
-                    <div class="card-pricing">
-                        <p>Rs 500</p>
-                        <strike>Rs 1000</strike>
-                        <p class="small-font">(50% OFF)</p>
+            <button class="btn btn-secondary text-s add-filter-btn">
+          Add filter
+        </button>
+            <h3>Products</h3>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h6 class="card-badge">NEW</h6>
+                        <div class="wishlist"><i class="far fa-heart"></i></div>
+                        <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-subtitle">Sub title</p>
+                        <div class="card-pricing">
+                            <p>Rs 500</p>
+                            <strike>Rs 1000</strike>
+                            <p class="small-font">(50% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                <i class="fas fa-cart-plus"></i>Add to cart
+              </button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">
-              <i class="fas fa-cart-plus"></i>Add to cart
-            </button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h6 class="card-badge">NEW</h6>
-                    <div class="wishlist"><i class="far fa-heart"></i></div>
-                    <img src="../../assets/white-cap.jpg" alt="white-cap" class="card-img" />
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-subtitle">Sub title</p>
-                    <div class="card-pricing">
-                        <p>Rs 500</p>
-                        <strike>Rs 1000</strike>
-                        <p class="small-font">(50% OFF)</p>
+                <div class="card">
+                    <div class="card-content">
+                        <h6 class="card-badge">NEW</h6>
+                        <div class="wishlist"><i class="far fa-heart"></i></div>
+                        <img src="../../assets/white-cap.jpg" alt="white-cap" class="card-img" />
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-subtitle">Sub title</p>
+                        <div class="card-pricing">
+                            <p>Rs 500</p>
+                            <strike>Rs 1000</strike>
+                            <p class="small-font">(50% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                <i class="fas fa-cart-plus"></i>Add to cart
+              </button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">
-              <i class="fas fa-cart-plus"></i>Add to cart
-            </button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h6 class="card-badge">NEW</h6>
-                    <div class="wishlist"><i class="far fa-heart"></i></div>
-                    <img src="../../assets/white-cap.jpg" alt="white-cap" class="card-img" />
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-subtitle">Sub title</p>
-                    <div class="card-pricing">
-                        <p>Rs 500</p>
-                        <strike>Rs 1000</strike>
-                        <p class="small-font">(50% OFF)</p>
+                <div class="card">
+                    <div class="card-content">
+                        <h6 class="card-badge">NEW</h6>
+                        <div class="wishlist"><i class="far fa-heart"></i></div>
+                        <img src="../../assets/white-cap.jpg" alt="white-cap" class="card-img" />
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-subtitle">Sub title</p>
+                        <div class="card-pricing">
+                            <p>Rs 500</p>
+                            <strike>Rs 1000</strike>
+                            <p class="small-font">(50% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                <i class="fas fa-cart-plus"></i>Add to cart
+              </button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">
-              <i class="fas fa-cart-plus"></i>Add to cart
-            </button>
-                </div>
-            </div>
-            <div class="card card-overlay">
-                <div class="overlay-content">
-                    <h4 class="overlay-text">Out of stock</h4>
-                </div>
-                <div class="card-content">
-                    <h6 class="card-badge">NEW</h6>
-                    <div class="wishlist"><i class="far fa-heart"></i></div>
-                    <img src="../../assets/white-cap.jpg" alt="white-cap" class="card-img" />
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-subtitle">Sub title</p>
-                    <div class="card-pricing">
-                        <p>Rs 500</p>
-                        <strike>Rs 1000</strike>
-                        <p class="small-font">(50% OFF)</p>
+                <div class="card card-overlay">
+                    <div class="overlay-content">
+                        <h4 class="overlay-text">Out of stock</h4>
+                    </div>
+                    <div class="card-content">
+                        <h6 class="card-badge">NEW</h6>
+                        <div class="wishlist"><i class="far fa-heart"></i></div>
+                        <img src="../../assets/white-cap.jpg" alt="white-cap" class="card-img" />
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-subtitle">Sub title</p>
+                        <div class="card-pricing">
+                            <p>Rs 500</p>
+                            <strike>Rs 1000</strike>
+                            <p class="small-font">(50% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                <i class="fas fa-cart-plus"></i>Add to cart
+              </button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">
-              <i class="fas fa-cart-plus"></i>Add to cart
-            </button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h6 class="card-badge">NEW</h6>
-                    <div class="wishlist"><i class="far fa-heart"></i></div>
-                    <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-subtitle">Sub title</p>
-                    <div class="card-pricing">
-                        <p>Rs 500</p>
-                        <strike>Rs 1000</strike>
-                        <p class="small-font">(50% OFF)</p>
+                <div class="card">
+                    <div class="card-content">
+                        <h6 class="card-badge">NEW</h6>
+                        <div class="wishlist"><i class="far fa-heart"></i></div>
+                        <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-subtitle">Sub title</p>
+                        <div class="card-pricing">
+                            <p>Rs 500</p>
+                            <strike>Rs 1000</strike>
+                            <p class="small-font">(50% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                <i class="fas fa-cart-plus"></i>Add to cart
+              </button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">
-              <i class="fas fa-cart-plus"></i>Add to cart
-            </button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h6 class="card-badge">NEW</h6>
-                    <div class="wishlist"><i class="far fa-heart"></i></div>
-                    <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-subtitle">Sub title</p>
-                    <div class="card-pricing">
-                        <p>Rs 500</p>
-                        <strike>Rs 1000</strike>
-                        <p class="small-font">(50% OFF)</p>
+                <div class="card">
+                    <div class="card-content">
+                        <h6 class="card-badge">NEW</h6>
+                        <div class="wishlist"><i class="far fa-heart"></i></div>
+                        <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-subtitle">Sub title</p>
+                        <div class="card-pricing">
+                            <p>Rs 500</p>
+                            <strike>Rs 1000</strike>
+                            <p class="small-font">(50% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                <i class="fas fa-cart-plus"></i>Add to cart
+              </button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">
-              <i class="fas fa-cart-plus"></i>Add to cart
-            </button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h6 class="card-badge">NEW</h6>
-                    <div class="wishlist"><i class="far fa-heart"></i></div>
-                    <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-subtitle">Sub title</p>
-                    <div class="card-pricing">
-                        <p>Rs 500</p>
-                        <strike>Rs 1000</strike>
-                        <p class="small-font">(50% OFF)</p>
+                <div class="card">
+                    <div class="card-content">
+                        <h6 class="card-badge">NEW</h6>
+                        <div class="wishlist"><i class="far fa-heart"></i></div>
+                        <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-subtitle">Sub title</p>
+                        <div class="card-pricing">
+                            <p>Rs 500</p>
+                            <strike>Rs 1000</strike>
+                            <p class="small-font">(50% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                <i class="fas fa-cart-plus"></i>Add to cart
+              </button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">
-              <i class="fas fa-cart-plus"></i>Add to cart
-            </button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h6 class="card-badge">NEW</h6>
-                    <div class="wishlist"><i class="far fa-heart"></i></div>
-                    <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-subtitle">Sub title</p>
-                    <div class="card-pricing">
-                        <p>Rs 500</p>
-                        <strike>Rs 1000</strike>
-                        <p class="small-font">(50% OFF)</p>
+                <div class="card">
+                    <div class="card-content">
+                        <h6 class="card-badge">NEW</h6>
+                        <div class="wishlist"><i class="far fa-heart"></i></div>
+                        <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-subtitle">Sub title</p>
+                        <div class="card-pricing">
+                            <p>Rs 500</p>
+                            <strike>Rs 1000</strike>
+                            <p class="small-font">(50% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                <i class="fas fa-cart-plus"></i>Add to cart
+              </button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">
-              <i class="fas fa-cart-plus"></i>Add to cart
-            </button>
+                <div class="card">
+                    <div class="card-content">
+                        <h6 class="card-badge">NEW</h6>
+                        <div class="wishlist"><i class="far fa-heart"></i></div>
+                        <img src="../../assets/cap.jpg" alt="cap" class="card-img" />
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-subtitle">Sub title</p>
+                        <div class="card-pricing">
+                            <p>Rs 500</p>
+                            <strike>Rs 1000</strike>
+                            <p class="small-font">(50% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                <i class="fas fa-cart-plus"></i>Add to cart
+              </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -277,7 +321,7 @@
             </a>
         </ul>
     </footer>
-    <script src="./scripts/script.js"></script>
+    <script src="../../scripts/script.js"></script>
 </body>
 
 </html>
