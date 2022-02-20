@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="https://kit.fontawesome.com/8831240330.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="../../index.html">
+            <h1>Brand</h1>
+        </a>
+        <div class="search-box">
+            <input type="search" name="search" placeholder="search ..." />
+            <i class="fas fa-search search-btn"></i>
+        </div>
+        <div class="open-menu"><i class="fas fa-bars"></i></div>
+        <ul class="main-menu text-s fw-600">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li>
+                <a href="../authentication/login.html">
+                    <button class="btn btn-primary login-btn">Login</button>
+                </a>
+            </li>
+            <li>
+                <a href=""><i class="fas fa-heart"></i></a>
+            </li>
+            <li>
+                <a href="../cart-mgmt/cart.html"><i class="fas fa-cart-plus"></i></a>
+            </li>
+            <div class="close-menu"><i class="fa fa-times"></i></div>
+            <span class="socials">
+                <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </li>
+            </span>
+        </ul>
+    </nav>
+
+    <main class="prod-select-container">
+        <section class="prod-section">
+            <h3>Products in your cart<span>(2)</span></h3>
+            <div class="card-container">
+                <div class="card card-horizontal">
+                    <div class="card-header">
+                        <img src="../../assets/white-cap.jpg" alt="cap-image" class="card-img" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Title</h3>
+                        <p>Subtitle</p>
+                        </p>Rs 500</p>
+                        <strike>Rs 1000</strike>
+                        <p>50% OFF</p>
+                        <div class="card-quantity">
+                            <button>-</button>
+                            <p>2</p>
+                            <button>+</button>
+                        </div>
+                        <a href="../cart-mgmt/cart.html"><button class="btn btn-primary">
+                        <i class="fas fa-cart-plus"></i>Add to cart
+                  </button>
+                  </a>
+                        <a href="../cart-mgmt/cart.html"><button class="btn btn-secondary-outline">Move to wishlist
+                  </button>
+                  </a>
+                    </div>
+                </div>
+                <div class="card card-horizontal">
+                    <div class="card-header">
+                        <img src="../../assets/cap.jpg" alt="cap-image" class="card-img" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Title</h3>
+                        <p>Subtitle</p>
+                        </p>Rs 800</p>
+                        <strike>Rs 2400</strike>
+                        <p>75% OFF</p>
+                        <div class="card-quantity">
+                            <button>-</button>
+                            <p>2</p>
+                            <button>+</button>
+                        </div>
+                        <a href="../cart-mgmt/cart.html"><button class="btn btn-primary">
+                            <i class="fas fa-cart-plus"></i>Add to cart
+                      </button>
+                      </a>
+                        <a href="../cart-mgmt/cart.html"><button class="btn btn-secondary-outline">Move to wishlist
+                      </button>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="price-details-container">
+            <div class="price-container">
+                <h4 class="text-center">Price details</h4>
+                <div class="price-details">
+                    <div class="price-detail-row">
+                        <div>Price<span>(2 item)</span></div>
+                        <div>Rs 1300</div>
+                    </div>
+                    <div class="price-detail-row">
+                        <div>Discount</div>
+                        <div>-Rs 300</div>
+                    </div>
+                    <div class="price-detail-row">
+                        <div>Delivery Charges</div>
+                        <div>FREE</div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="price-detail-row">
+                        <div>Total</div>
+                        <div>Rs 1000</div>
+                    </div>
+                    <div class="separator"></div>
+                    <div>You will save Rs<span>300</span> on this order</div>
+                    <button class="btn btn-primary text-s">Place order</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3>Keep in touch</h3>
+        <ul>
+            <a href="">
+                <li><i class="fab fa-instagram"></i></li>
+            </a>
+            <a href="">
+                <li><i class="fab fa-twitter"></i></li>
+            </a>
+            <a href="">
+                <li><i class="fab fa-github"></i></li>
+            </a>
+        </ul>
+        <h3>Userful links</h3>
+        <ul>
+            <a href="">
+                <li>FAQ</li>
+            </a>
+            <a href="">
+                <li>T & C</li>
+            </a>
+            <a href="">
+                <li>Track orders</li>
+            </a>
+        </ul>
+    </footer>
+    <script src="../../scripts/script.js"></script>
+</body>
+
+</html>

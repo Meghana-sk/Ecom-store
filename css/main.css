@@ -1,6 +1,7 @@
 @import url("https://intactui.netlify.app/main.css");
 @import url("../css/auth.css");
 @import url("../css/products.css");
+@import url("../css/cart.css");
 :root {
     --pd-s: 20px;
     --pd-l: 24px;
