@@ -75,7 +75,7 @@
 }
 
 .highlight-text {
-    color: var(--white-color);
+    color: var(--dark-theme-bg-color);
 }
 
 .hero-section {
