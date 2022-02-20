@@ -3,6 +3,7 @@
 }
 
 .prod-filters {
+    width: 40vw;
     margin: 0.5rem;
     border-right: 1px solid var(--offline-gray);
     padding: 1rem;
@@ -20,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: var(--pd-s);
 }
 
 .separator {
@@ -38,7 +39,7 @@
 }
 
 .add-filter-btn,
-.close-menu {
+.close-filter {
     display: none;
 }
 
@@ -65,6 +66,7 @@
 }
 
 .slider-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
@@ -86,29 +88,32 @@
 
 @media(max-width: 800px) {
     .prod-content .prod-filters {
-        width: 100vw;
+        width: 90vw;
         height: 100vh;
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
-        z-index: 50;
+        z-index: 20;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         background: var(--white-color);
-        transition: all 2s ease;
+        transition: left 0.8s ease;
         display: none;
-        padding: 3rem;
-        gap: 2rem;
-        font-size: 1.6rem;
-        margin: 100px 0;
-    }
-    .prod-content .prod-filters ul {
-        display: none;
+        overflow-y: scroll;
     }
     .add-filter-btn,
-    .close-menu {
+    .close-filter {
         display: block;
+    }
+    .close-filter {
+        position: absolute;
+        top: var(--pd-s);
+        right: var(--pd-s);
+        color: var(--secondary-dark-blue-hover)
+    }
+    .slider-container {
+        width: 60vw;
     }
 }

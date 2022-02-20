@@ -202,10 +202,11 @@
         position: absolute;
         top: var(--pd-s);
         right: var(--pd-s);
-        color: var(--secondary-dark-blue-hover)
+        color: var(--secondary-dark-blue-hover);
     }
     .nav .open-menu {
         display: block;
+        cursor: pointer;
         color: var(--secondary-dark-blue-hover)
     }
     .nav .open-menu:hover {
