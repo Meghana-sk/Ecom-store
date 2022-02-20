@@ -169,7 +169,7 @@
     color: var(--white-color);
 }
 
-.footer a li {
+.footer li a {
     list-style: none;
     color: var(--white-color);
 }
