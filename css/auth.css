@@ -22,6 +22,14 @@
     gap: 0.5rem;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.auth-container .auth-content a .btn,
+.auth-container .auth-content form .btn,
 form .input-box {
     width: 100%;
 }
@@ -33,4 +41,8 @@ form .input-box {
 
 i:hover {
     color: var(--primary-blue)
+}
+
+.login-hint {
+    color: var(--secondary-color-hover);
 }

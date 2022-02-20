@@ -75,7 +75,7 @@
 }
 
 .highlight-text {
-    color: var(--white-color);
+    color: var(--dark-theme-bg-color);
 }
 
 .hero-section {
@@ -167,6 +167,10 @@
     align-items: center;
     gap: 1rem;
     color: var(--white-color);
+}
+
+.brand-name {
+    color: var(--primary-blue);
 }
 
 .footer li a {
