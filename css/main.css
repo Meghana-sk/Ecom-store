@@ -169,6 +169,10 @@
     color: var(--white-color);
 }
 
+.brand-name {
+    color: var(--primary-blue);
+}
+
 .footer li a {
     list-style: none;
     color: var(--white-color);
