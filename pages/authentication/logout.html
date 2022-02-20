@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/main.css" />
     <script src="https://kit.fontawesome.com/8831240330.js" crossorigin="anonymous"></script>
-    <title>Sign up</title>
+    <title>Logout</title>
 </head>
 
 <body>
@@ -52,37 +52,9 @@
 
     <section class="auth-container">
         <div class="auth-content">
-            <header class="auth-header">
-                <h1>Sign up</h1>
-                <a href="../../index.html"><i class="fas fa-times"></i></a>
-            </header>
-            <form action="">
-                <div class="input-box">
-                    <label class="input-label fw-600">First name</label>
-                    <input class="input-text" type="text" required />
-                </div>
-                <div class="input-box">
-                    <label class="input-label fw-600">Last name</label>
-                    <input class="input-text" type="text" required />
-                </div>
-                <div class="input-box">
-                    <label class="input-label fw-600">Email</label>
-                    <input class="input-text" type="email" required />
-                </div>
-                <div class="input-box">
-                    <label class="input-label fw-600">Password</label>
-                    <input class="input-text" type="password" required />
-                </div>
-                <div class="input-box">
-                    <label class="input-label fw-600">Confirm Password</label>
-                    <input class="input-text" type="password" required />
-                </div>
-                <button class="btn btn-primary text-s">Create account</button>
-            </form>
-            <a href="./login.html" class="login-hint">
-                <span>Already have an account ?</span>
-                <button class="btn btn-secondary-text text-s fw-600">Login</button>
-            </a>
+            <div class="text-center"><i class="fa fa-check-circle fa-2x"></i></div>
+            <p>You have been logged out. Click below to login</p>
+            <a href="../authentication/login.html"><button class="btn btn-primary text-s">Login</button></a>
         </div>
     </section>
 
@@ -112,6 +84,7 @@
             </li>
         </ul>
     </footer>
+    <script src="../../scripts/script.js"></script>
 </body>
 
 </html>
