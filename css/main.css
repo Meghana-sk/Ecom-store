@@ -1,5 +1,6 @@
 @import url("https://intactui.netlify.app/main.css");
 @import url("../css/auth.css");
+@import url("../css/products.css");
 :root {
     --pd-s: 20px;
     --pd-l: 24px;
@@ -185,6 +186,7 @@
         top: 0;
         right: 0;
         left: 0;
+        z-index: 10;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -200,10 +202,11 @@
         position: absolute;
         top: var(--pd-s);
         right: var(--pd-s);
-        color: var(--secondary-dark-blue-hover)
+        color: var(--secondary-dark-blue-hover);
     }
     .nav .open-menu {
         display: block;
+        cursor: pointer;
         color: var(--secondary-dark-blue-hover)
     }
     .nav .open-menu:hover {

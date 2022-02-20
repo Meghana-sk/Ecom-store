@@ -1,9 +1,9 @@
-const mainMenu = document.querySelector('.main-menu');
-const closeMenu = document.querySelector('.close-menu');
-const openMenu = document.querySelector('.open-menu');
+const mainMenu = document.querySelector(".main-menu");
+const closeMenu = document.querySelector(".close-menu");
+const openMenu = document.querySelector(".open-menu");
 
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
+openMenu.addEventListener("click", show);
+closeMenu.addEventListener("click", close);
 
 /**
  * Shows hamburger menu with options for small screens
@@ -11,8 +11,8 @@ closeMenu.addEventListener('click', close);
  * @return none
  */
 function show() {
-    mainMenu.style.display = 'flex';
-    mainMenu.style.top = '0';
+    mainMenu.style.display = "flex";
+    mainMenu.style.top = "0";
 }
 
 /**
@@ -21,5 +21,5 @@ function show() {
  * @return none
  */
 function close() {
-    mainMenu.style.top = '-100%';
+    mainMenu.style.top = "-100%";
 }
