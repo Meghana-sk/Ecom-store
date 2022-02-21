@@ -25,6 +25,7 @@ SK's is one stop destination for all your trendy wears.
 - Products page with filters
 - Wishlist page
 - Cart management page
+- Responsive
 
 ---
 
