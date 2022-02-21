@@ -102,12 +102,13 @@
         display: none;
         overflow-y: scroll;
     }
-    .add-filter-btn,
-    .close-filter {
+    .add-filter-btn {
         display: block;
         width: 100%;
     }
     .close-filter {
+        display: inline;
+        height: 24px;
         position: absolute;
         top: var(--pd-s);
         right: var(--pd-s);
