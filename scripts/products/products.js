@@ -23,3 +23,11 @@ function showFilter() {
 function closeFilter() {
     filterSection.style.left = "-100%";
 }
+
+
+/** Hides close icon whenever window size exceeds 800px */
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 800) {
+        closeIcon.style.display = "none";
+    }
+})
